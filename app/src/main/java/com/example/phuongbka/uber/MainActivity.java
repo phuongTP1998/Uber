@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 waitingDialog.show();
 
                 //Login
-                auth.signInWithEmailAndPassword(edtName.getText().toString(), edtPassword.getText().toString())
+                auth.signInWithEmailAndPassword(edtEmail.getText().toString(), edtPassword.getText().toString())
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {
